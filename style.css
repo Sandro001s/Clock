@@ -1,0 +1,98 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+}
+
+.circle{
+    width: 500px;
+    height: 500px;
+    border-radius: 50%;
+    box-shadow: 0px 1px 4px 0px;
+    margin-top: 150px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+}
+
+.number{
+    transform: rotate(calc(30deg * var(--n)));
+    position: absolute;
+    text-align: center;
+    inset: 20px;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.reddot{
+    width: 25px;
+    height: 25px;
+    background-color: orangered;
+    position: absolute;
+    margin-top: 230px;
+    border-radius: 50px;
+}
+
+.hour-hand, .minute-hand, .second-hand{
+    position: absolute;
+    left: 50%;
+    bottom: 50%;
+    transform: translate(-50%) rotate(calc(var(--rotate) * 1deg));
+    transform-origin: bottom;
+    border-radius: 50px;
+}
+
+.hour-hand{
+    width: 12px;
+    height: 140px;
+    background: black;   
+}
+
+.minute-hand{
+    width: 12px;
+    height: 190px;
+    background-color: black;
+}
+
+.second-hand{
+    width: 6px;
+    height: 210px;
+    background-color: red;
+}
+
+
+button{
+    width: 130px;
+    height: 50px;
+    background-color: black;
+    color: white;
+    border: none;
+    position: absolute;
+    margin-top: 800px;
+    border-radius: 10px;
+    font-size: 20px;
+}
+
+.white{
+    color: white;
+}
+
+.blackbg{
+    background-color: black;
+}
+
+.whitebg{
+    background-color: white;
+    color: black;
+}
+
+.boxshadowcircle{
+    box-shadow:  0 25px 45px rgba(255, 255, 255, 0.149), 0 15px 25px rgba(255, 255, 255, 0.149);
+}
